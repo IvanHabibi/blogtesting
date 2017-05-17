@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <button type="button" @click="choosecontentp" name="button">ea</button>
+      <kepala></kepala>
+      <badan v-bind:contentdata=contentdata ></badan>
+      <sidebar v-bind:test=listBlogs v-on:choosecontent="choosecontentp"></sidebar>
+
+
+    </div>
+
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/vue.js" charset="utf-8"></script>
+  <script src="./js/index.js" charset="utf-8"></script>
+</html>
